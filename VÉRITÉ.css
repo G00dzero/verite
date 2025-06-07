@@ -1,0 +1,498 @@
+.grid-container
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+}
+
+.nav
+{
+    display: none;
+}
+.overlay {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #000000e6;
+overflow: hidden;
+transition: 2s;
+}
+
+
+.overlay-content {
+position: relative;
+top: 25%;
+width: 100%;
+text-align: center;
+margin-top: 30px;
+
+}
+
+.overlay a {
+padding: 8px;
+text-decoration: none;
+font-size: 36px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+color: #f1f1f1;
+}
+
+.overlay .closebtn {
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 60px;
+
+}
+
+    body{
+        background-color: #f5f5f5;
+    }
+    header
+    {
+text-align: center;
+border: 2px;
+padding: 10px;
+
+    }
+
+.primary:hover,.secondary:hover, .tertiary:hover
+{
+    transform: scale(1.1); 
+    background-color: #bc5f33;
+    color: #f5f5f5;
+}
+
+.fashion:hover,.skills:hover, .skills2:hover
+{
+    transform: scale(1.1); 
+    background-color: #bc5f33;
+    color: #f5f5f5;
+    
+}
+
+    .primary,.secondary,.tertiary
+{
+border: none;
+padding: 10px;
+margin: 12%;
+border-radius: 10%;
+text-align: center;
+color: #333;
+box-shadow: 5px 5px 5px #00000038 ;
+transition:transform 1s;
+font-size: 85%;
+}
+
+
+#img1
+{
+    width: 100%;
+    height: auto;
+border-radius: 10%;
+}
+
+#img2
+
+{
+    width: 100%;
+    height: auto;
+border-radius: 10%;
+}
+
+#img3
+{
+    width: 100%;
+    height: auto;
+border-radius: 10%;
+}
+
+#searchP
+{
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+    border: none;
+    box-shadow: 5px 5px 5px #00000038 ;
+    font-size: 16px;
+
+
+}
+
+#searchP:focus
+{
+    outline: none;
+    box-shadow: 0 0 5px #bc5f33;
+
+}
+
+
+
+
+.search-button {
+width:46px;
+    height: 46px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 5px 5px 5px #00000038 ;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 16px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #bc5f33;
+    color: #f5f5f5;
+    transform: scale(1.1);
+}
+
+
+
+.field
+{
+    background-color: #eaf1ec;
+   display: grid;;
+    border: 2px solid #3b6847; /* Optional: Add a border color */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.column1
+{
+  display: none;
+  text-align: right;
+    padding: 2%;
+    font-size: 32px;
+}
+
+.column2 input
+{
+    background-color: transparent;
+    border-radius: 20px;
+    color:#fff;
+    padding: 1.5em;
+    border: #bc5f33 solid 2px;
+}
+
+#buttonS2,#buttonS
+{
+    padding: 10px;
+    background-color: #eaf1ec; /* Optional: Add a background color */
+    color: #000000; /* Optional: Change text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button_1
+{
+    padding: 10px;
+    background-color: #eaf1ec; /* Optional: Add a background color */
+    color: #000000; /* Optional: Change text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button_1:hover
+{
+    background-color: #bc5f33; /* Optional: Change background color on hover */
+    color: #fff; /* Optional: Change text color on hover */
+    transform: scale(1.05); /* Optional: Slightly enlarge the button on hover */
+}
+
+#buttonS,
+#buttonS2 {
+    box-shadow: 0 0 10px #3b6847, 0 0 20px #3b6847;
+    transition: box-shadow 0.3s, background 0.3s;
+}
+
+#buttonS:hover,
+#buttonS2:hover {
+    box-shadow: 0 0 20px #3b6847, 0 0 40px #3b6847;
+    background: #bc5f33;
+    color: #fff;
+}
+
+ .auth-link,.ForgotP,.terms,.Policy,#su,#si
+    {
+text-decoration: none;
+    color: #bc5f33; /* Optional: Change text color */
+    font-weight: bold;
+    }
+
+.footer
+{
+    text-align: center;
+    padding: 20px;
+    background-color: #3b6847; /* Optional: Add a background color */
+    color: #f5f5f5; /* Optional: Change text color */
+   
+}
+
+@media screen and (min-width:720px)
+{
+    .grid-container
+    {
+        display: grid;
+        grid-template-columns: repeat(6, 16%);
+    }
+
+   .nav {
+    display: none;
+}
+.header {
+    grid-column: 1 / 7; /* Spans the entire width */
+    text-align: center;
+}
+
+h2{
+    grid-column: 1 / 7; /* Spans the entire width */
+    text-align: center;
+}
+.intro
+{
+    grid-column: 1 / 7; /* Spans the entire width */
+    padding-top: 7px;
+}
+.primary 
+{
+    grid-column: 1 / 4; /* Spans the first two columns */
+}
+.secondary 
+{
+    grid-column: 3 / 7; /* Spans the next two columns */
+}
+.tertiary 
+{
+    grid-column: 1 /4 ; /* Spans the last two columns */
+}
+.search-container
+{
+    grid-column: 3 / 7; /* Spans the entire width */
+    padding-top: 10px;
+}
+#form
+{
+    grid-column: 1 / 7; /* Spans the entire width */
+    padding: 20px;
+    background-color: #f5f5f5; /* Optional: Add a background color */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+.column1
+{
+    grid-column: 1 / 4; /* Spans the first two columns */
+    display: inline;
+    text-align: right;
+    padding: 2%;
+    font-size: 32px;
+}
+.column2
+{
+    grid-column: 4 / 7; /* Spans the next two columns */
+}
+.column3
+{
+    grid-column: 1 / 7; /* Spans the entire width */
+}
+#buttonS
+{
+    grid-column: 1 / 7; /* Spans the entire width */
+}
+#buttonS2
+{
+    grid-column: 1 / 7; /* Spans the entire width */
+}
+.ForgotP
+{
+    grid-column: 1 / 7; /* Spans the entire width */
+    text-align: center;
+    padding-top: 10px;
+}
+.footer
+{
+    grid-column: 1 / 7; /* Spans the entire width */
+    text-align: center;
+    padding: 20px;
+    background-color: #3b6847; /* Optional: Add a background color */
+    color: #f5f5f5; /* Optional: Change text color */
+}
+
+}
+@media screen and (min-width: 992px)
+{
+ .grid-container
+ {
+    display: grid;
+    grid-template-columns: repeat(12, 8.35%);
+
+ }   
+
+.header {
+    grid-column: 1 / 13; /* Spans the entire width */
+    text-align: center;
+   
+}
+
+.overlay,.openbtn
+{
+    display: none;
+  
+}
+
+.nav{
+    display: inline;
+    grid-column: 1/13; /* Spans the entire width */
+    padding: 10px;
+    margin: 0;
+    background-color: #3b6847; /* Optional: Add a background color */
+text-align: center;
+    gap: 20px; /* Space between links */
+    position: sticky;
+    top: 0; /* Stick to the top */
+    z-index: 1; /* Ensure it stays above other content */
+}
+
+.nav a {
+    display: inline-block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.nav a:hover {
+    background-color: #f5f5ff;
+    color: #bc5f33;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+ h2{
+    grid-column: 3/7;
+}
+
+.intro
+{
+    grid-column: 9/11;
+   padding-top: 7px;
+}
+.primary
+{
+    grid-column: 1/4;
+}
+
+.secondary
+{
+    grid-column: 5/9;
+}
+
+.tertiary
+{
+grid-column: 10/13;
+}
+
+.fashion
+{
+    grid-column: 1/4;
+}
+.skills
+{
+    grid-column: 5/9;
+}
+
+.skills2
+{
+    grid-column: 10/13;
+}
+
+
+.search-header
+{
+    grid-column: 2/5;
+}
+.search-container
+{
+    grid-column: 9/13;
+    padding-top: 10px;;
+   
+}
+
+.signin-header
+{
+    grid-column: 1/13;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#form
+{
+    grid-column: 4/10;
+    padding: 20px;
+    background-color: #f5f5f5; /* Optional: Add a background color */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.column1
+{
+    grid-column: 1/5;
+    display: inline;;
+}
+
+.column2
+{
+    grid-column: 5/10;
+}
+
+.column3
+{
+    grid-column: 2/10;
+}
+#buttonS
+{
+    grid-column: 1/10;
+}
+#buttonS2
+{
+    grid-column: 4/8;
+}
+.ForgotP
+{
+    grid-column: 2/9;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer
+{
+    grid-column: 1/13;
+    text-align: center;
+    padding: 20px;
+    background-color: #3b6847; /* Optional: Add a background color */
+    color: #fff; /* Optional: Change text color */
+}
+
+
+}
+
+
+

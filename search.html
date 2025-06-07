@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="VÉRITÉ.css">
+</head>
+   <body>
+<div class="grid-container">
+         
+   <div class="header">
+            <h1>VÉRITÉ</h1>
+</div>
+
+  <!-- The overlay -->
+          <div id="myNav" class="overlay">
+  
+              <!-- Button to close the overlay navigation -->
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                 <!-- Overlay content -->
+            <div class="overlay-content">
+          
+                        <a href="VÉRITÉ.html">Home</a>
+                        <a href="search.html">Search</a>
+                        <a href="Basket.html">Basket</a>
+                        <a href="WishList.html">WishList</a>
+                        <a href="signin.html">Sign In</a>
+         </div>
+          </div>
+            <div class="nav"> 
+                <nav>
+                    
+                        <a href="VÉRITÉ.html">Home</a>
+                        <a href="search.html">Search</a>
+                        <a href="Basket.html">Basket</a>
+                        <a href="WishList.html">WishList</a>
+                        <a href="signin.html">Sign In</a>
+                    
+                </nav>
+            </div>
+               <span style="font-size:50px;cursor:pointer" class="openbtn"  onclick="openNav()">&#9776; </span>
+ 
+                 <h2 class="search-header">Search for Products</h2>
+
+<div class="search-container">
+  <form action="search_results.php" method="GET" id="searchForm">
+            <input type="text" name="query" id="searchP" placeholder="Search for products..." required>
+    <button type="submit" aria-label="Search" class="search-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="7" stroke="#333" stroke-width="2"/>
+        <line x1="16.5" y1="16.5" x2="22" y2="22" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+  </form>
+</div>
+
+
+                 <div class="search-results">
+                      <!-- Search results will be displayed here -->
+                 </div>
+
+                 <footer class="footer">
+                        <section id="newsletter">
+                            <div class="container">
+                                <h1>Subscribe To Our Newsletter</h1>
+                                <form>
+                                    <input type="email" placeholder="Enter Email...">
+                                    <button type="submit" class="button_1" onclick="subscribe()">Subscribe</button>
+                                </form>
+                                            <p>VÉRITÉ &copy; 2021</p>
+
+                            </div>
+                        </section>
+                 </footer>
+  
+   <script>
+      function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+              </body>
+   </html>

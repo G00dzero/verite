@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basket</title>
+    <link rel="stylesheet" href="VÉRITÉ.css">
+</head>
+<body>
+<div class="grid-container">
+    <div class="header">
+        <h1>VÉRITÉ</h1>
+    </div>
+    <div class="nav">
+        <nav>
+            <a href="VÉRITÉ.html">Home</a>
+            <a href="search.html">Search</a>
+            <a href="Basket.html">Basket</a>
+            <a href="WishList.html">WishList</a>
+            <a href="signin.html">Sign In</a>
+        </nav>
+    </div>
+
+    <h2 class="signin-header">Sign In For the Full <b>Experience</b></h2>
+
+    <div class="signin-container">
+        <!-- Basket items will be displayed here -->
+    </div>
+
+    <footer class="footer">
+        <section id="newsletter">
+            <div class="container">
+                <h1>Subscribe To Our Newsletter</h1>
+                <form>
+                    <input type="email" placeholder="Enter Email...">
+                    <button type="submit" class="button_1">Subscribe</button>
+                </form>
+                <p>VÉRITÉ &copy; 2021</p>
+            </div>
+        </section>
+    </footer>

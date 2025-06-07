@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="VÉRITÉ.css">
+</head>
+   <body>
+<div class="grid-container">
+         
+   <div class="header">
+            <h1>VÉRITÉ</h1>
+</div>
+            <div class="nav"> 
+                <nav>
+                    
+                        <a href="VÉRITÉ.html">Home</a>
+                        <a href="Search.html">Search</a>
+                        <a href="Basket.html">Basket</a>
+                        <a href="WishList.html">WishList</a>
+                        <a href="contact.html">Contact</a>
+                    
+                </nav>
+            </div>
+              
+                 <h2>Search for Products</h2>
+                 <form action="search_results.php" method="GET">
+                      <input type="text" name="query" placeholder="Search for products..." required>
+                      <button type="submit">Search</button>
+                 </form>
+                 
+                 <div class="search-results">
+                      <!-- Search results will be displayed here -->
+                 </div>
+                 <footer>
+                        <section id="newsletter">
+                            <div class="container">
+                                <h1>Subscribe To Our Newsletter</h1>
+                                <form>
+                                    <input type="email" placeholder="Enter Email...">
+                                    <button type="submit" class="button_1">Subscribe</button>
+                                </form>
+                            </div>
+                        </section>
+                 </footer>
+   </html>
