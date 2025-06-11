@@ -156,7 +156,17 @@ width:46px;
     transform: scale(1.1);
 }
 
-
+#wishlistP,#basketP
+{
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 5px 5px 5px #00000038 ;
+    font-size: 16px;
+    
+}
 
 .field
 {
@@ -390,6 +400,12 @@ text-align: center;
     grid-column: 3/7;
 }
 
+.basket-container,.wishlist-container
+{
+    grid-column: 11/13;
+    padding-top: 10px;
+}
+
 .intro
 {
     grid-column: 9/11;
@@ -435,6 +451,8 @@ grid-column: 10/13;
     padding-top: 10px;;
    
 }
+
+
 
 .signin-header
 {
